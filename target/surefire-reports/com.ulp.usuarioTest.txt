@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: com.ulp.usuarioTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.105 s <<< FAILURE! -- in com.ulp.usuarioTest
+com.ulp.usuarioTest.testDelay -- Time elapsed: 0.059 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: execution timed out after 30 ms
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.createAssertionFailure(AssertTimeoutPreemptively.java:132)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.resolveFutureAndHandleException(AssertTimeoutPreemptively.java:116)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:82)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:65)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:47)
+	at org.junit.jupiter.api.AssertTimeoutPreemptively.assertTimeoutPreemptively(AssertTimeoutPreemptively.java:43)
+	at org.junit.jupiter.api.Assertions.assertTimeoutPreemptively(Assertions.java:3428)
+	at com.ulp.usuarioTest.testDelay(usuarioTest.java:77)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.junit.jupiter.api.AssertTimeoutPreemptively$ExecutionTimeoutException: Execution timed out in thread junit-timeout-thread-1
+	at java.base/java.lang.Thread.sleepNanos0(Native Method)
+	at java.base/java.lang.Thread.sleepNanos(Thread.java:496)
+	at java.base/java.lang.Thread.sleep(Thread.java:527)
+	at com.ulp.usuario.delay(usuario.java:31)
+	at com.ulp.usuarioTest.lambda$testDelay$0(usuarioTest.java:78)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
+com.ulp.usuarioTest.testValidarUsr -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:31)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:183)
+	at com.ulp.usuarioTest.testValidarUsr(usuarioTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
