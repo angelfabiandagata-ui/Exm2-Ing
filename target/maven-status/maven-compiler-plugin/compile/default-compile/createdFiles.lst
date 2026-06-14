@@ -1,2 +1,6 @@
+com\ulp\Mochila.class
 com\ulp\PlantillaTp5Junit.class
 com\ulp\usuario.class
+com\ulp\Comida.class
+com\ulp\Enemigo.class
+com\ulp\Heroe.class
